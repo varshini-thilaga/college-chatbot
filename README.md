@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SECE AI Assistant
 
 A multilingual AI chatbot for Sri Eshwar College of Engineering (SECE) with voice input/output support.
@@ -141,3 +142,6 @@ Proprietary - Sri Eshwar College of Engineering
 ## Contact
 
 For issues or questions, contact the development team.
+=======
+# college-chatbot
+>>>>>>> 75e89728580d1aca0318325d502a6df37329e6fc
