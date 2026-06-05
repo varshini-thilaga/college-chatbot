@@ -1,16 +1,17 @@
-from googletrans import Translator
+from deep_translator import GoogleTranslator
 
-translator = Translator()
 
-def indic_to_english(text, chrome_lang):
+def indic_to_english(text: str, chrome_lang: str) -> str:
     try:
-        return translator.translate(text, dest="en").text
+        lang = chrome_lang.split("-")[0]
+        return GoogleTranslator(source=lang, target="en").translate(text)
     except Exception:
         return text
 
-def english_to_indic(text, chrome_lang):
+
+def english_to_indic(text: str, chrome_lang: str) -> str:
     try:
-        target = chrome_lang.split("-")[0]
-        return translator.translate(text, dest=target).text
+        lang = chrome_lang.split("-")[0]
+        return GoogleTranslator(source="en", target=lang).translate(text)
     except Exception:
         return text
